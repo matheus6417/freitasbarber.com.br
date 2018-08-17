@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,17 +8,11 @@
     <meta name="title" content="Freitas Barber">
     <meta name="description" content="A sua Barbearia em Piçarras, SC">
     <meta name="keywords" content="Barbearia, Salao, Cabeleireiro, Picarras, Corte de cabelo">
-  
     <link rel="manifest" href="manifest.json">
-
- 
-        <link rel="stylesheet" href="assets\css\app.css">
-
-</head>
+    <link rel="stylesheet" href="assets\css\app.css"> </head>
 
 <body>
-
-<div class="loader">
+    <!-- <div class="loader">
     <div class="logo">
         <div class="loader-logo-img">
             <img src="#img/logo-black.png" alt="Freitas Barber - Barbearia em Picarras - SC">
@@ -28,8 +23,586 @@
             <div></div>
         </div>
     </div>
-</div>
-  
+</div> -->
+    <header>
+        <nav class="nav">
+            <a href="#nav-menu" class="toggle-nav-menu-mobile">
+                <div class="icon-hamburger">
+                    <div class="icon-hamburger-inner"></div>
+                </div>
+            </a>
+            <a href="#nav-social" class="toggle-nav-social-mobile">
+                <div class="icon icon-share"></div>
+            </a>
+            <a href="index.htm" class="nav-logo">
+                <img src="assets\img\contents\menu-logo.png" width="115" height="115" alt="Freitas Barber"> </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li>
+                    <a href="#presentation" data-toggle="scrollto"> Fotos e depoimentos </a>
+                </li>
+                <li>
+                    <a href="#nos-specialites" data-toggle="scrollto"> Diferenciais </a>
+                </li>
+                <li class="middle">
+                    <a href="#notre-carte" data-toggle="scrollto"> Serviços </a>
+                </li>
+                <li>
+                    <a href="#nous-suivre" data-toggle="scrollto"> Estilos de corte </a>
+                </li>
+                <li>
+                    <a href="#nous-contacter" data-toggle="scrollto"> Contato </a>
+                </li>
+            </ul>
+            <ul class="nav-social">
+                <li>
+                    <a href="https://www.facebook.com/cafeducentremontcuq/" class="btn-social" target="_blank">
+                        <i class="fonticon-facebook"></i>
+                        <span class="sr">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/cafeducentremontcuq" class="btn-social" target="_blank">
+                        <i class="fonticon-instagram"></i>
+                        <span class="sr">Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="site-wrapper">
+        <div id="home" class="hero section">
+            <div class="container">
+                <strong class="hero-logo">
+                    <img src="assets\img\contents\hero-logo.png" srcset="assets\img\contents\hero-logo@2x.png" alt="Freitas Barber - Barbearia em Picarras - SC"> </strong>
+                <a href="#presentation" class="goto-bottom-link" data-toggle="scrollto">
+                    <div class="scroll-down-icon">
+                        <div class="mouse">
+                            <div class="scroll"></div>
+                        </div>
+                    </div>
+                    <span class="sr">Découvrir la suite</span>
+                </a>
+            </div>
+        </div>
+        <div id="presentation" class="section intro">
+            <div class="container">
+                <h1 class="section-title">Prévia com prova social</h1>
+                <div class="intro-coffee-mark coffee-mark"></div>
+                <div class="intro-slider-wrapper">
+                    <div id="intro-slider" class="intro-slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide intro-slider-item">
+                                <div class="intro-slider-item-frame">
+                                    <img data-src="./assets/img/contents/freitas-barber-5.jpg" alt="Photo du Freitas Barber à Montcuq"
+                                        class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide intro-slider-item">
+                                <div class="intro-slider-item-frame">
+                                    <img data-src="./assets/img/contents/freitas-barber-4.jpg" alt="Photo du Freitas Barber à Montcuq"
+                                        class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide intro-slider-item">
+                                <div class="intro-slider-item-frame">
+                                    <img data-src="./assets/img/contents/freitas-barber-3.jpg" alt="Photo du Freitas Barber à Montcuq"
+                                        class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide intro-slider-item">
+                                <div class="intro-slider-item-frame">
+                                    <img data-src="./assets/img/contents/freitas-barber-2.jpg" alt="Photo du Freitas Barber à Montcuq"
+                                        class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide intro-slider-item">
+                                <div class="intro-slider-item-frame">
+                                    <img data-src="./assets/img/contents/freitas-barber-1.jpg" alt="Photo du Freitas Barber à Montcuq"
+                                        class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-coffee lazy lazy-bg"></div>
+                    <div class="intro-photograph lazy lazy-bg"></div>
+                    <div class="intro-sunglasses lazy lazy-bg"></div>
+                    <div class="intro-smoke lazy lazy-bg"></div>
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <a href="javascript:void(0);" class="btn-swiper-left">
+                        <i class="icon icon-arrow-left"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="btn-swiper-right">
+                        <i class="icon icon-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="nos-specialites" class="section specialties">
+            <div class="container">
+                <h2 class="section-title"> Diferenciais (contra objeções e melhor q concorrentes) </h2>
+                <p class="section-subtitle"> Avant de visualiser Serviços,
+                    <br>nous vous proposons de découvrir une sélection
+                    <br>de Diferenciais (contra objeções e melhor q concorrentes). </p>
+                <div class="specialty-list">
+                    <div class="specialty-item">
+                        <div class="specialty-coffee-mark coffee-mark"></div>
+                        <div class="specialty-item-img">
+                            <img data-src="./assets/img/contents/specialties/californienne.png" alt="La Californienne" class="lazy">
+                            <div class="spec-1 lazy lazy-bg"></div>
+                        </div>
+                        <div class="specialty-item-content">
+                            <h3 class="specialty-title">
+                                <span>La Californienne</span>
+                            </h3>
+                            <p class="specialty-description"> Salade verte, poulet, ananas, poivrons
+                                <br>marinés, tomates confites </p>
+                        </div>
+                        <div class="spec-2 lazy lazy-bg"></div>
+                    </div>
+                    <div class="specialty-item">
+                        <div class="specialty-coffee-mark coffee-mark"></div>
+                        <div class="specialty-item-img">
+                            <img data-src="./assets/img/contents/specialties/assiette-paysanne.png" alt="La Paysanne" class="lazy">
+                            <div class="spec-1 lazy lazy-bg"></div>
+                        </div>
+                        <div class="specialty-item-content">
+                            <h3 class="specialty-title">
+                                <span>La Paysanne</span>
+                            </h3>
+                            <p class="specialty-description"> Salade verte, bleu, noix, bacon,
+                                <br>croûtons, oignons rouges </p>
+                        </div>
+                        <div class="spec-2 lazy lazy-bg"></div>
+                    </div>
+                    <div class="specialty-item">
+                        <div class="specialty-coffee-mark coffee-mark"></div>
+                        <div class="specialty-item-img">
+                            <img data-src="./assets/img/contents/specialties/cesar.png" alt="La César" class="lazy">
+                            <div class="spec-1 lazy lazy-bg"></div>
+                        </div>
+                        <div class="specialty-item-content">
+                            <h3 class="specialty-title">
+                                <span>La César</span>
+                            </h3>
+                            <p class="specialty-description"> Salade verte, poulet mariné, parmesan,
+                                <br>croûtons, oignons rouges </p>
+                        </div>
+                        <div class="spec-2 lazy lazy-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="notre-carte" class="section menu">
+            <div class="bg"></div>
+            <div class="container">
+                <h2 class="section-title">Serviços</h2>
+                <div class="section-subtitle"> Découvrez maintenant tout ce que nous vous proposons&nbsp;! </div>
+                <div class="menu-slider-wrapper swiper-container">
+                    <div class="menu-slider swiper-wrapper">
+                        <div class="menu-slider-category swiper-slide">
+                            <h3 class="menu-slider-category-title">LES PLATS BRASSERIE</h3>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le Risotto
+                                    <strong class="item-price">11€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> aux champignons et parmesan </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> L’Omelette nature
+                                    <strong class="item-price">10€50</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> accompagnée de frites & salade verte </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> L’Omelette au Cabécou
+                                    <strong class="item-price">12€50</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> accompagnée de frites & salade verte </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le Jambon-Oeuf
+                                    <strong class="item-price">12€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> accompagnée de frites & salade verte </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le Cassoulet
+                                    <strong class="item-price">16€90</strong>
+                                </h4>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le filet de Truite
+                                    <strong class="item-price">15€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> accompagnée de frites & salade verte </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Les Crevettes sauvages
+                                    <strong class="item-price">15€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> accompagnée de frites & salade verte </p>
+                            </div>
+                            <div class="menu-slider-item" style="display: none;">
+                                <h4 class="menu-slider-item-name"> Carpaccio de boeuf
+                                    <strong class="item-price">15€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> accompagnée de frites & salade verte </p>
+                            </div>
+                            <h3 class="menu-slider-category-title">SUPPLÉMENT SAUCE
+                                <br>& ACCOMPAGNEMENT</h3>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Poivre, Cabécou ou Bleu
+                                    <strong class="item-price">1€</strong>
+                                </h4>
+                                <br>
+                                <p class="menu-slider-item-description"> Tous nos plats peuvent être accompagnés de
+                                    <strong class="enlighten">haricots verts</strong> avec supplément de
+                                    <br>
+                                    <strong class="item-price">1€50</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="menu-slider-category swiper-slide">
+                            <h3 class="menu-slider-category-title"> LES SALADES </h3>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> La César
+                                    <strong class="item-price">12€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Salade verte, poulet mariné, parmesan, croûtons, oignons rouges </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> La Parisienne
+                                    <strong class="item-price">10€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Salade verte, tomates, jambon, emmental, ananas, croûtons, oignons rouges </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> La Quercynoise
+                                    <strong class="item-price">11€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Salade verte, tomates, fromage Cabécou, gésiers de volaille, magret de canard fumé, noix
+                                    </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> La Californienne
+                                    <strong class="item-price">11€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Salade verte, poulet, ananas, poivrons marinés, tomates confites </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> La Méditerranéenne
+                                    <strong class="item-price">13€50</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Salade verte, cocombres, féta, poulet, poivrons marinés, tomates confites, sauce citronnée
+                                    </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> La Paysanne
+                                    <strong class="item-price">12€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Salade verte, bleu, noix, bacon, croûtons, oignons rouges </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> La Cabécou
+                                    <strong class="item-price">10€90</strong>
+                                </h4>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> L’Assiette du Quercy
+                                    <strong class="item-price">16€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Salade verte, tomates, fromages Cabécou, noix,gésiers de volaille, manchons, magret de canard
+                                    fumé, frites </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> L’Assiette du Sud-Ouest
+                                    <strong class="item-price">16€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Salade verte, tomates, magret séché et fumé, demi magret de canard grillé, sauce Cabécou,
+                                    confit d'oignons, frites </p>
+                            </div>
+                            <h3 class="menu-slider-category-title"> MENU ENFANT </h3>
+                            <div class="menu-slider-item kids">
+                                <h4 class="menu-slider-item-name">
+                                    <strong>Steak haché 80gr</strong> ou
+                                    <strong>nuggets</strong> ou
+                                    <strong>jambon</strong>
+                                    <strong class="item-price">8€</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Accompagné de frites + glace </p>
+                            </div>
+                        </div>
+                        <div class="menu-slider-category swiper-slide">
+                            <h3 class="menu-slider-category-title"> LES BURGERS </h3>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le Cheese Burger
+                                    <strong class="item-price">12€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Steak haché, cheddar, sauce barbecue salade, tomate </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le Blue Bacon
+                                    <strong class="item-price">14€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Steak haché, bacon, bleu d’Auvergne salade, oignons rouges </p>
+                            </div>
+                            <h3 class="menu-slider-category-title"> LES VIANDES </h3>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le Steak haché (180gr)
+                                    <strong class="item-price">10€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Accompagné de frites & salade verte </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le Steak (250gr) selon arrivage
+                                    <strong class="item-price">15€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Accompagné de frites & salade verte </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le Cavalier
+                                    <strong class="item-price">11€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Accompagné de frites & salade verte </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le Confit de Canard
+                                    <strong class="item-price">14€90</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Accompagné de frites, confiture d’oignons & salade verte </p>
+                            </div>
+                            <div class="menu-slider-item">
+                                <h4 class="menu-slider-item-name"> Le Magret de Canard
+                                    <strong class="item-price">18€50</strong>
+                                </h4>
+                                <p class="menu-slider-item-description"> Pièce entière, accompagné de frites & salade verte </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <a href="javascript:void(0);" class="btn-swiper-left">
+                        <i class="arrow-left"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="btn-swiper-right">
+                        <i class="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="nous-suivre" class="section social">
+            <div class="container">
+                <h2 class="section-title">Estilos de corte</h2>
+                <p class="section-subtitle"> Vous voulez suivre notre actualité, être au courant de tous nos événements, soirées, concerts&nbsp;? ...
+                    <br> Rien de plus simple&nbsp;! Abonnez-vous à nos pages Facebook et Instagram&nbsp;;) </p>
+                <div class="social-wall-wrapper swiper-container">
+                    <div class="social-wall swiper-wrapper">
+                        <div class="social-wall-col swiper-slide">
+                            <div class="social-wall-item item-instagram">
+                                <div class="social-wall-item-image">
+                                    <img data-src="https://scontent.cdninstagram.com/vp/f3fd8e6183ab311a2ce786f0bda32996/5BDDC316/t51.2885-15/sh0.08/e35/s640x640/37144358_1126390194195884_6864050667556700160_n.jpg"
+                                        alt="Freitas Barber" class="lazy"> </div>
+                                <div class="social-wall-item-text">Envie de venir vous restaurer en terrasse, de passer un bon moment en famille ou entre amis
+                                    ?!...</div>
+                                <div class="">
+                                    <strong>#46</strong>
+                                    <strong>#foodporn</strong>
+                                    <strong>#plat</strong>
+                                    <strong>#terrasse</strong>
+                                    <strong>#resto</strong>
+                                    <strong>#soleil</strong>
+                                    <strong>#ete</strong>
+                                    <strong>#montcuq</strong>
+                                    <strong>#photooftheday</strong>
+                                    <strong>#pictureoftheday</strong>
+                                    <strong>#cafeducentre</strong>
+                                    <strong>#salade</strong>
+                                    <strong>#brasserie</strong>
+                                    <strong>#tomate</strong>
+                                    <strong>#produitsdelamer</strong>
+                                    <strong>#crevette</strong>
+                                    <strong>#cafeducentremontcuq</strong>
+                                    <strong>#picoftheday</strong>
+                                    <strong>#crevettes</strong>
+                                    <strong>#cafe</strong>
+                                    <strong>#lot</strong>
+                                    <strong>#quercy</strong>
+                                    <strong>#photodujour</strong>
+                                    <strong>#restaurant</strong>
+                                    <strong>#food</strong>
+                                    <strong>#frites</strong>
+                                    <strong>#assiette</strong>
+                                </div>
+                                <div class="social-tag">
+                                    <i class="fonticon-instagram"></i>
+                                </div>
+                                <a href="https://www.instagram.com/p/BlX9RV8g8Rs/" target="_blank" class="social-wall-item-link">
+                                    <span class="sr">Voir le post</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-wall-col swiper-slide">
+                            <div class="social-wall-item item-instagram">
+                                <div class="social-wall-item-image">
+                                    <img data-src="https://scontent.cdninstagram.com/vp/72758f4f30f3f48b7f252a0d34b5e460/5BD56D23/t51.2885-15/e35/36568041_176616506536023_1037475631253684224_n.jpg"
+                                        alt="Freitas Barber" class="lazy"> </div>
+                                <div class="social-wall-item-text">CHAMPIONS DU MONDE !!! Quelle ambiance et quel match ! Bravo à l'équipe de France 🇫🇷 </div>
+                                <div class="social-tag">
+                                    <i class="fonticon-instagram"></i>
+                                </div>
+                                <a href="https://www.instagram.com/p/BlQqtELgZj8/" target="_blank" class="social-wall-item-link">
+                                    <span class="sr">Voir le post</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-wall-col swiper-slide">
+                            <div class="social-wall-item item-instagram">
+                                <div class="social-wall-item-image">
+                                    <img data-src="https://scontent.cdninstagram.com/vp/8a75f2c136f5ec5ed63b306272b356ba/5BC93358/t51.2885-15/sh0.08/e35/s640x640/36560563_277204692844923_7472542719018008576_n.jpg"
+                                        alt="Freitas Barber" class="lazy"> </div>
+                                <div class="social-wall-item-text">DIMANCHE C'EST LA FINALE ET ON VA GAGNER NOTRE 2EME ETOILE, ON VOUS DONNE RDV À 17H !!!!
+                                    On vous...</div>
+                                <div class="social-tag">
+                                    <i class="fonticon-instagram"></i>
+                                </div>
+                                <a href="https://www.instagram.com/p/BlLcK0hg235/" target="_blank" class="social-wall-item-link">
+                                    <span class="sr">Voir le post</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-wall-col swiper-slide">
+                            <div class="social-wall-item item-instagram">
+                                <div class="social-wall-item-image">
+                                    <img data-src="https://scontent.cdninstagram.com/vp/4c0de144d5afa4b29fae4d5635fb6174/5BE40781/t51.2885-15/sh0.08/e35/s640x640/36704907_1865725566821972_6475090822843858944_n.jpg"
+                                        alt="Freitas Barber" class="lazy"> </div>
+                                <div class="social-wall-item-text">Soif !!!!!! 🤤 </div>
+                                <div class="social-tag">
+                                    <i class="fonticon-instagram"></i>
+                                </div>
+                                <a href="https://www.instagram.com/p/Bk-ttn_Av0B/" target="_blank" class="social-wall-item-link">
+                                    <span class="sr">Voir le post</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-wall-col swiper-slide">
+                            <div class="social-wall-item item-instagram">
+                                <div class="social-wall-item-image">
+                                    <img data-src="https://scontent.cdninstagram.com/vp/ba4243a936b7e370570cdeec8d42a135/5BE2CDD4/t51.2885-15/sh0.08/e35/s640x640/36024451_2041501229497397_7202779959209754624_n.jpg"
+                                        alt="Freitas Barber" class="lazy"> </div>
+                                <div class="social-wall-item-text">Vous suivez la coupe du monde de foot !? On attend vos pronostics pour le match de vendredi
+                                    !...</div>
+                                <div class="social-tag">
+                                    <i class="fonticon-instagram"></i>
+                                </div>
+                                <a href="https://www.instagram.com/p/BkzSbJjA7Rd/" target="_blank" class="social-wall-item-link">
+                                    <span class="sr">Voir le post</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-wall-col swiper-slide">
+                            <div class="social-wall-item item-instagram">
+                                <div class="social-wall-item-image">
+                                    <img data-src="https://scontent.cdninstagram.com/vp/9db40af4280948001a8da28797ebc08e/5BE6BD3A/t51.2885-15/sh0.08/e35/s640x640/35616548_2089969151244323_4545748842980573184_n.jpg"
+                                        alt="Freitas Barber" class="lazy"> </div>
+                                <div class="social-wall-item-text">Le ciel est bleu, il fait chaud... La terrasse n'attend que vous ! 😎☀️ </div>
+                                <div class="social-tag">
+                                    <i class="fonticon-instagram"></i>
+                                </div>
+                                <a href="https://www.instagram.com/p/Bku9ZYbAIHJ/" target="_blank" class="social-wall-item-link">
+                                    <span class="sr">Voir le post</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-wall-col swiper-slide">
+                            <div class="social-wall-item item-instagram">
+                                <div class="social-wall-item-image">
+                                    <img data-src="https://scontent.cdninstagram.com/vp/dfc87fbe60d107917d4af2f5c936abb1/5BDDB243/t51.2885-15/sh0.08/e35/s640x640/35534215_227184814554641_7475106629810126848_n.jpg"
+                                        alt="Freitas Barber" class="lazy"> </div>
+                                <div class="social-wall-item-text">Avec ces chaleurs, venez déguster notre salade César en terrasse 😎🥗 </div>
+                                <div class="social-tag">
+                                    <i class="fonticon-instagram"></i>
+                                </div>
+                                <a href="https://www.instagram.com/p/BkhcJsiA_x1/" target="_blank" class="social-wall-item-link">
+                                    <span class="sr">Voir le post</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-wall-col swiper-slide">
+                            <div class="social-wall-item item-instagram">
+                                <div class="social-wall-item-image">
+                                    <img data-src="https://scontent.cdninstagram.com/vp/4de69bb8fa3cc249f7680fd020d6a17d/5BC9FE86/t51.2885-15/sh0.08/e35/s640x640/34768976_2196414987261274_4631699281831526400_n.jpg"
+                                        alt="Freitas Barber" class="lazy"> </div>
+                                <div class="social-wall-item-text">Le soleil s'installe et on va bien en profiter 😎🌞 </div>
+                                <div class="social-tag">
+                                    <i class="fonticon-instagram"></i>
+                                </div>
+                                <a href="https://www.instagram.com/p/BkcVn69AuaH/" target="_blank" class="social-wall-item-link">
+                                    <span class="sr">Voir le post</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <a href="javascript:void(0);" class="btn-swiper-left">
+                        <i class="arrow-left"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="btn-swiper-right">
+                        <i class="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="nous-contacter" class="section contact">
+            <div class="bg"></div>
+            <div class="container">
+                <h2 class="section-title">Contato</h2>
+                <div class="infos-row">
+                    <div class="infos-item">
+                        <i class="icon icon-map-marker"></i>
+                        <h3 class="infos-item-title">
+                            <span>Freitas Barber</span>
+                        </h3>
+                        <p class="infos-item-content"> R. Tijucas 140, NS da Paz
+                            <br> Piçarras SC
+                            <br> </p>
+                    </div>
+                    <div class="infos-item">
+                        <i class="icon icon-clock"></i>
+                        <h3 class="infos-item-title">
+                            <span>Heures d'ouverture</span>
+                        </h3>
+                        <p class="infos-item-content"> Du lundi au dimanche&nbsp;: 8&nbsp;h à 00&nbsp;h
+                            <br> Ouvert 7&nbsp;jours&nbsp;sur&nbsp;7 </p>
+                    </div>
+                    <div class="infos-item">
+                        <i class="icon icon-credit-card"></i>
+                        <h3 class="infos-item-title">
+                            <span>Mode Paiement</span>
+                        </h3>
+                        <p class="infos-item-content"> CB, VIsa, Mastercard,
+                            <br> American Express, chèques vacances,
+                            <br> tickets restaurants, chèques déjeuner </p>
+                    </div>
+                </div>
+                <div class="contact-row">
+                    <div class="map-wrapper">
+                        <h3 class="contact-title">
+                            <span>Un plan</span>
+                        </h3>
+                        <p class="contact-description"> Nous situer pour venir passer un moment convivial
+                            <br> avec nous, on vous laisse le plan ;) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="assets\js\main.js"></script>
 </body>
 
 </html>
