@@ -1,0 +1,120 @@
+.sc_services .sc_item_title + .sc_item_columns,
+.sc_services .sc_item_subtitle + .sc_item_columns {
+    margin-top: 5em;
+}
+.sc_services_item_avatar {
+   position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.sc_services_item_avatar img{
+    height: 100%;
+}
+.sc_services .left .sc_services_item_avatar {
+    float: right;
+}
+.sc_services_default .sc_services_title,
+.sc_services_default .sc_services_subtitle,
+.sc_services_default .sc_services_descr,
+.sc_services_default .sc_services_button {
+	text-align:center;
+}
+.sc_services .sc_services_item_info {
+    padding:1em 2em 4.3em;
+    /*width: 50%;*/
+	text-align: center;
+    overflow: hidden;
+
+}
+.sc_services_default .sc_item_columns + .sc_item_button{
+    margin-top: 4em;
+}
+.sc_services_default .sc_services_button .sc_button_icon{
+    display: none;
+}
+.sc_services_default .sc_services_item_icon {
+    position: relative;
+    font-size: 3.5em;
+    margin-bottom: 0.43em;
+    font-weight: 300;
+    line-height: 1em;
+    padding-top: 1.15em;
+}
+.sc_services_default .sc_services_item_title {
+	margin: 0;
+	font-size:1.6428em;
+	text-transform: uppercase;
+	line-height: 1.3em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.sc_services_default .sc_services_item_subtitle {
+	font-size: 0.9286em;
+	line-height:1.5em;
+	margin-top: 0.5em;
+}
+.sc_services_default .sc_services_item_content {
+	margin-top:1.1em;
+    position: relative;
+
+}
+.sc_services_default .sc_services_item_content p {
+	margin:0;
+    font-size:0.857em;
+    line-height: 2em;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.sc_services_default .sc_services_item_button {
+	margin:1em 0 0;
+}
+.sc_services_default .sc_services_item_button a {
+    font-size: 1.1428em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.sc_services_default .sc_services_item,
+.sc_services_default .sc_services_item .sc_services_item_icon,
+.sc_services_default .sc_services_item .sc_services_item_title a{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.sc_services_default .sc_services_item {
+    overflow: hidden;
+    position: relative;
+}
+.sc_services_default .sc_services_item:hover .sc_services_item_avatar{
+    opacity: 1;
+}
+
+/*single*/
+.single.single-cpt_services .sc_services_item_avatar {
+    position: relative;
+    float: left;
+    margin-right: 1em;
+    opacity: 1;
+    width: auto;
+}
+.single.single-cpt_services .services_item_content p{
+    position: relative;
+    width: auto;
+}
