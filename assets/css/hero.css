@@ -1,0 +1,186 @@
+﻿/*! CSS Used from: http://projectsunday.net/css/app.css */
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    border: 0;
+}
+
+h4 {
+    font-family: "TradeGothicLTPro-BdCn20", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+h4 {
+    font-size: 2.28rem;
+    line-height: 2.508rem;
+    margin: 1.14rem 0 .912rem 0;
+}
+
+div:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.light-txt {
+    color: #dad6cc;
+}
+
+.pad-top {
+    padding: 2rem 0 0 0;
+}
+
+::-webkit-input-placeholder {
+    color: #8f7c4f;
+}
+
+:-moz-placeholder {
+    color: #8f7c4f;
+}
+
+::-moz-placeholder {
+    color: #8f7c4f;
+}
+
+:-ms-input-placeholder {
+    color: #8f7c4f;
+}
+
+.hero .mantra {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    margin-bottom: 400px;
+    text-align: center;
+    margin: 4.5rem 0;
+    z-index: 2;
+}
+
+@media (max-width: 667px) {
+    .hero .mantra {
+        display: none;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+    .hero .mantra {
+        height: 600px;
+    }
+}
+
+.hero .mantra .text {
+    position: absolute;
+    width: 100%;
+    top: 250px;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+@media (max-width: 667px) {
+    .hero .mantra .text {
+        width: 80%;
+    }
+}
+
+.hero .mantra .built-lockup {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.hero .mantra img {
+    width: 180px;
+    margin: 0 auto;
+}
+
+.hero .mantra .line-wrap {
+    width: 640px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+@media (max-width: 667px) {
+    .hero .mantra .line-wrap {
+        width: 80%;
+    }
+}
+
+.hero .mantra .line-wrap .top-line,
+.hero .mantra .line-wrap .bottom-line {
+    width: 0;
+    height: 4px;
+    background-color: #dad6cc;
+}
+
+@media (max-width: 667px) {
+    .hero .mantra .line-wrap .top-line,
+    .hero .mantra .line-wrap .bottom-line {
+        width: 100% !important;
+    }
+}
+
+.hero .mantra .line-wrap .top-line {
+    left: 0;
+    float: left;
+}
+
+.hero .mantra .line-wrap .bottom-line {
+    right: 0;
+    float: right;
+}
+
+.hero .mantra h4 {
+    width: 100%;
+    padding: 0;
+    letter-spacing: 15px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 4.28rem;
+    line-height: 4.508rem;
+}
+
+@media (max-width: 1024px) {
+    .hero .mantra h4 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        white-space: line-wrap;
+    }
+}
+
+/*! CSS Used fontfaces */
+
+@font-face {
+    font-family: 'TradeGothicLTPro-BdCn20';
+    src: url("../fonts/2E9580_2_0.eot");
+    src: url("../fonts/2E9580_2_0.eot#iefix") format("embedded-opentype"), url("../fonts/2E9580_2_0.woff2") format("woff2"), url("../fonts/2E9580_2_0.woff") format("woff"), url("../fonts/2E9580_2_0.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*! CSS Used from: http://projectsunday.net/css/app.css */
+*,*:before,*:after{box-sizing:inherit;}
+h2{font-family:"TradeGothicLTPro-BdCn20",sans-serif;text-transform:uppercase;font-weight:normal;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-transition:0.3s all ease;transition:0.3s all ease;}
+h2{font-size:3.56rem;line-height:3.916rem;margin:1.78rem 0 1.424rem 0;}
+.latlong{position:fixed;top:30px;right:15px;opacity:1;font-size:11px;font-size:1.1rem;text-transform:uppercase;color:#8f7c4f;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transform-origin:right bottom;transform-origin:right bottom;line-height:1;z-index:1001;letter-spacing:2px;}
+@media (max-width: 1024px){
+}
