@@ -178,9 +178,45 @@ img {
 }
 
 /*! CSS Used from: http://projectsunday.net/css/app.css */
-*,*:before,*:after{box-sizing:inherit;}
-h2{font-family:"TradeGothicLTPro-BdCn20",sans-serif;text-transform:uppercase;font-weight:normal;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-transition:0.3s all ease;transition:0.3s all ease;}
-h2{font-size:3.56rem;line-height:3.916rem;margin:1.78rem 0 1.424rem 0;}
-.latlong{position:fixed;top:30px;right:15px;opacity:1;font-size:11px;font-size:1.1rem;text-transform:uppercase;color:#8f7c4f;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transform-origin:right bottom;transform-origin:right bottom;line-height:1;z-index:1001;letter-spacing:2px;}
-@media (max-width: 1024px){
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
+
+h2 {
+    font-family: "TradeGothicLTPro-BdCn20", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+h2 {
+    font-size: 3.56rem;
+    line-height: 3.916rem;
+    margin: 1.78rem 0 1.424rem 0;
+}
+
+.latlong {
+    position: absolute;
+    top: 15%;
+    right: 15px;
+    opacity: 1;
+    font-size: 11px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #8f7c4f;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: right bottom;
+    transform-origin: right bottom;
+    line-height: 1;
+    z-index: 1001;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 1024px) {}
