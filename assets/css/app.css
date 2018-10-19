@@ -210,7 +210,7 @@ template {
 
 @font-face {
     font-family: SignPainter;
-    src: url(../fonts/SignPainter-HouseScript.eot?#iefix) format("embedded-opentype"), url(../fonts/SignPainter-HouseScript.ttf) format("truetype"), url(../fonts/SignPainter-HouseScript.svg) format("svg");
+    src: url(../fonts/SignPainter-HouseScript.eot?iefix) format("embedded-opentype"), url(../fonts/SignPainter-HouseScript.ttf) format("truetype"), url(../fonts/SignPainter-HouseScript.svg) format("svg");
     font-weight: 400;
     font-style: normal
 }

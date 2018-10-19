@@ -172,7 +172,7 @@ img {
 @font-face {
     font-family: 'TradeGothicLTPro-BdCn20';
     src: url("../fonts/2E9580_2_0.eot");
-    src: url("../fonts/2E9580_2_0.eot#iefix") format("embedded-opentype"), url("../fonts/2E9580_2_0.woff2") format("woff2"), url("../fonts/2E9580_2_0.woff") format("woff"), url("../fonts/2E9580_2_0.ttf") format("truetype");
+    src: url("../fonts/2E9580_2_0.eotiefix") format("embedded-opentype"), url("../fonts/2E9580_2_0.woff2") format("woff2"), url("../fonts/2E9580_2_0.woff") format("woff"), url("../fonts/2E9580_2_0.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
