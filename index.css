@@ -630,7 +630,9 @@ input {
         transform: none;
     }
 }
-
+.social-link-color {
+    color: #e7e7e7;
+}
 .quote__card {
     background-color: #fff;
     padding: 2rem;
