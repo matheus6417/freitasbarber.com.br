@@ -182,7 +182,7 @@ p {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0em;
-    color: #e7e7e7;
+    color: #f3f1f1;
 }
 
 
@@ -290,7 +290,7 @@ input {
 }
 
 .cont__inn {
-    max-width: 125rem;
+    max-width: 145rem;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -348,7 +348,7 @@ input {
     background-repeat: no-repeat;
     background-size: auto 100%;
     /* background-image: linear-gradient(47deg, #000000 0%, #3c2922 26%, #795548 82%); */
-    background: linear-gradient(47deg, rgba(0, 0, 0, 0.87) 0%, rgba(60, 41, 34, 0.7) 26%, rgb(74, 50, 42) 82%), url(img/bg-hero-ambient.jpg);
+    background: linear-gradient(47deg, rgba(0, 0, 0, 0.87) 0%, rgba(60, 41, 34, 0.7) 26%, rgb(74, 50, 42, 0.8) 82%), url(img/bg-hero-ambient.jpg);
     position: fixed;
     top: 0;
     left: 0;
@@ -395,7 +395,7 @@ input {
 }
 
 .head__logo img {
-    height: 200px;
+    height: 225px;
     text-align: center;
     margin: 0 auto;
 }
@@ -635,10 +635,12 @@ input {
         transform: none;
     }
 }
+
 .social-link-color {
     color: #e7e7e7;
     line-height: 2rem;
 }
+
 .quote__card {
     background-color: #fff;
     padding: 2rem;
@@ -668,6 +670,7 @@ input {
     -ms-transform: scale(1.15) translateY(-42%);
     transform: scale(1.15) translateY(-42%)
 }
+
 .quote__image--img {
     width: 100%;
     margin-top: -1.5rem;
@@ -770,7 +773,7 @@ input {
 
 .btn--underline {
     position: relative;
-    padding-left: 2.5rem;
+    padding-left: 3.5rem;
 }
 
 .btn--underline:before {
@@ -875,7 +878,7 @@ input {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    max-width: 125rem;
+    max-width: 145rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -1306,6 +1309,7 @@ input {
     line-height: 2.2rem;
     font-weight: 600;
 }
+
 .hero-contact-live .hero-social-icon {
     width: 1.5rem;
     position: relative;
@@ -1313,4 +1317,10 @@ input {
 
 .hero-contact-link {
     line-height: 2rem;
-}   
+}
+
+.fb-like.fb_iframe_widget {
+    opacity: 0.9;
+    padding: 20px 0;
+    filter: grayscale(0.23);
+}
