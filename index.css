@@ -447,7 +447,7 @@ input {
 }
 
 .content__text {
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 1.2em;
     opacity: 0.8;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
@@ -609,9 +609,13 @@ input {
 }
 
 .quote__cont__col {
-    width: 50%;
+    width: 100%;
     float: left;
-    padding-right: 3rem
+    padding-right: 3rem;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    padding-bottom: 10%;
 }
 
 @media (min-width: 980px) {
@@ -644,17 +648,18 @@ input {
 .quote__card {
     background-color: #fff;
     padding: 2rem;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
     padding-top: 3.5rem;
     position: relative;
     /* border-radius: 0.5rem; */
     width: 100%;
     -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.26);
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.26);
-    margin-top: 5.5rem;
+    margin-top: 4.5rem;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .quote__card:hover {
@@ -696,22 +701,25 @@ input {
     -webkit-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
     line-height: 1.4;
-    color: #797979
+    color: #797979;
+    display: block;
 }
 
 .quote__text__anchor {
-    color: #997f5f
+    color: #997f5f;
+    display: block;
 }
 
 .quote__user {
-    position: absolute;
+    position: relative;
     left: 3rem;
     bottom: 3.5rem;
     font-size: 1.6rem;
     line-height: 1em;
     color: #a4a4a4;
     -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out;
+    display: block;
 }
 
 .quote__user:hover {
@@ -749,12 +757,16 @@ input {
 }
 
 .quote__date {
-    position: absolute;
-    right: 3rem;
-    bottom: 3.5rem;
+    position: relative;
+    right: auto;
+    bottom: auto;
     color: #a4a4a4;
     line-height: 1em;
-    font-size: 1.6rem
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: right;
+    margin-bottom: -1rem;
 }
 
 .btn {
@@ -1290,6 +1302,7 @@ input {
     clear: both;
     position: relative;
     font-size: 2rem;
+    color: white;
 }
 
 .hero-contact-subtitle {
