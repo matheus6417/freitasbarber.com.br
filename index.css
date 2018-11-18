@@ -360,6 +360,8 @@ input {
 }
 
 .cont--gradient {
+    background:-webkit-linear-gradient(43deg,rgba(0,0,0,.87) 0%,rgba(60,41,34,.7) 26%,rgb(74,50,42,.8) 82%),url(img/bg-hero-ambient.jpg);
+    background:-o-linear-gradient(43deg,rgba(0,0,0,.87) 0%,rgba(60,41,34,.7) 26%,rgb(74,50,42,.8) 82%),url(img/bg-hero-ambient.jpg);
     background:linear-gradient(47deg,rgba(0,0,0,.87) 0%,rgba(60,41,34,.7) 26%,rgb(74,50,42,.8) 82%),url(img/bg-hero-ambient.jpg);
     position: fixed;
     top: 0;
@@ -373,9 +375,11 @@ input {
 }
 
 .cont--gradient:before {
-    content: '';
+  content: '';
     position: absolute;
     color: #ac9374;
+    background-image: -webkit-linear-gradient(137deg, #795548 0%, #3c2922 26%, #000 82%);
+    background-image: -o-linear-gradient(137deg, #795548 0%, #3c2922 26%, #000 82%);
     background-image: linear-gradient(-47deg, #795548 0%, #3c2922 26%, #000 82%);
     width: 100%;
     height: 100%;
