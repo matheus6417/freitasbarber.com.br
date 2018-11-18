@@ -360,7 +360,7 @@ input {
 }
 
 .cont--gradient {
-    /* background:linear-gradient(47deg,rgba(0,0,0,.87) 0%,rgba(60,41,34,.7) 26%,rgb(74,50,42,.8) 82%),url(img/bg-hero-ambient.jpg); */
+    background:linear-gradient(47deg,rgba(0,0,0,.87) 0%,rgba(60,41,34,.7) 26%,rgb(74,50,42,.8) 82%),url(img/bg-hero-ambient.jpg);
     position: fixed;
     top: 0;
     left: 0;
