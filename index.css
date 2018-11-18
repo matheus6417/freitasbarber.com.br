@@ -715,10 +715,10 @@ input {
 
 .quote__user {
     position: relative;
-    left: 3rem;
-    bottom: 3.5rem;
-    font-size: 1.6rem;
-    line-height: 1em;
+    left: auto;
+    bottom: auto;
+    font-size: 1.8rem;
+    line-height: 2em;
     color: #a4a4a4;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;

@@ -102,13 +102,13 @@
   </div>
   </div>
   <script id="fullTable_template" type="text/html">
-    {{#rows}}
-        <a class="quote__card" href="{{LinkDesseCard}}" target="_blank">
+    {{#rows}} 
+      <a class="quote__card" href="{{LinkQuandoClicaNoCard}}" target="_blank">
           <span class="quote__img" style="background-image: url('{{FotoUsuario}}'),var(--default-img);"></span>
-          <span class="quote__image"> <img class="quote__image--img"  src="{{FotoNoCard}}"></span>
+          <span class="quote__image"> <img class="quote__image--img" src="{{ImagemParaOCard}}" ></span>
           <span class="quote__user">{{NomeOuUsuario}}</span>
-          <span class="quote__text">{{Comentario}}<span class="quote__text__anchor">{{Tag}}</span>
-            <span class="quote__text__anchor">{{Tag2}}</span>
+          <span class="quote__text">{{TextoNoCard}}<span class="quote__text__anchor">{{Tag}}</span>
+          <span class="quote__text__anchor">{{Tag2}}</span>
           <span class="quote__date">{{Data}}</span>
         </a>
     {{/rows}}
@@ -233,25 +233,31 @@
     var currentMinute = currentDate.getMinutes();
 
     function openClose() {
-      if (currentDay >= 1 && currentDay <= 5) { //if current day is Monday-Thursday
-        document.getElementById("friday").style.display = "none";
-        if (currentHour >= 8 && currentHour <= 21) { //They open on Monday - Thrusday at 8 am and close at 7 pm
-          document.getElementById("closed").style.display = "none";
-        } else {
-          document.getElementById("open").style.display = "none";
+      if (currentHour <= 12 && currentHour >= 13) {
+        if (currentDay >= 2 && currentDay <= 5) { //if current day is TER-SEX 
+          if (currentHour >= 8 && currentHour <= 20) {
+            //das 8 as 18 
+            document.getElementById("closed").style.display = "none";
+          } else {
+            document.getElementById("open").style.display = "none";
+          }
         }
-      }
-      if (currentDay === 5) { // if current day is Friday
-        document.getElementById("mon-thurs").style.display = "none";
-        if (currentHour >= 8 && currentHour <= 17.5) { //They open on Friday at 8 am and close at 5: 30 pm 
-          document.getElementById("closed").style.display = "none";
-        } else {
-          document.getElementById("open").style.display = "none";
+        if (currentDay === 1) { // if current day is SEG 
+          if (currentHour >= 13 && currentHour <= 20) { //das 13 as 18 
+            document.getElementById("closed").style.display = "none";
+          } else {
+            document.getElementById("open").style.display = "none";
+          }
         }
-      }
-      if (currentDay === 0 || currentDay === 6) { //Closed onSaturday and Sunday 
+        if (currentDay === 6) {
+          if (currentHour >= 8 && currentHour <= 18) {
+            document.getElementById("closed").style.display = "none";
+          } else {
+            document.getElementById("open").style.display = "none";
+          }
+        }
+      } else {
         document.getElementById("open").style.display = "none";
-        document.getElementById("friday").style.display = "none";
       }
     };
     setInterval(openClose(), 5000);
