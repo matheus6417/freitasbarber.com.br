@@ -1,0 +1,13 @@
+﻿{
+    "name": "Freitas Barber",
+    "description": "A Melhor Barbearia de Piçarras",
+    "lang": "pt-BR",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#000000",
+    "icons": [{
+        "src": "https://freitasbarber.com.br/safari-pinned-tab.svg"
+    }],
+    "background_color": "#000000"
+}
