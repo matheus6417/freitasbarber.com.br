@@ -475,7 +475,7 @@ input {
 }
 
 .content__btns {
-    margin-top: 4rem
+    margin: 4rem 0;
 }
 
 .content__note {
@@ -542,6 +542,10 @@ input {
     width: 100%;
     padding: 3.6rem .8rem 6rem;
     zoom: 1
+}
+
+.only-mobile {
+    display: none;
 }
 
 .quote__cont__inn:after,
@@ -752,7 +756,7 @@ input {
 
 .btn--underline {
     position: relative;
-    padding-left: 3.5rem
+    padding-left: 3.5rem;
 }
 
 .btn--gradient:before,
@@ -774,12 +778,13 @@ input {
     -webkit-transform-origin: 0 100%;
     -ms-transform-origin: 0 100%;
     transform-origin: 0 100%;
-    width: 79%;
+    width: 94px;
     top: 78%;
     left: 50%;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    border-radius: .6rem
+    border-radius: .6rem;
+    margin-left: 11px;
 }
 
 .btn--underline:hover {
@@ -1182,7 +1187,7 @@ input {
     }
 
     .btn--underline {
-        margin-top: 2rem;
+        margin: 2rem;
     }
 
     .hero-contact-icon {
@@ -1200,6 +1205,10 @@ input {
         -webkit-columns: 1;
         -moz-columns: 1;
         columns: 1
+    }
+
+    .only-mobile {
+        display: block;
     }
 }
 
