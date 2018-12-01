@@ -471,7 +471,9 @@ input {
 
 @media (max-width:640px) {
     .content__text {
-        font-size: 1.6rem
+        font-size: 1.6rem;
+        max-width: calc(100% - 7rem);
+        margin: auto;
     }
 }
 
