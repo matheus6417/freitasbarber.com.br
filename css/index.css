@@ -1319,8 +1319,8 @@ input {
 
 .fb-like.fb_iframe_widget {
     opacity: .9;
-    padding: 20px 0;
-    filter: grayscale(.23)
+    /* padding: 20px 0; */
+    filter: grayscale(.23);
 }
 
 #closed.hero-contact-live {
