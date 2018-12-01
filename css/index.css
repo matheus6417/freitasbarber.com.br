@@ -208,7 +208,7 @@ p {
 p {
     font-family: Lato;
     font-size: 1.6em;
-    color: #f3f1f1
+    color: #f3f1f1;
 }
 
 body,
@@ -462,10 +462,11 @@ input {
 
 .content__text {
     font-size: 2.2rem;
-    line-height: 1.2em;
-    opacity: .8;
+    line-height: 1.4em;
+    /* opacity: .8; */
+    font-weight: 500;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-    filter: alpha(opacity=60)
+    filter: alpha(opacity=60);
 }
 
 @media (max-width:640px) {
@@ -617,7 +618,7 @@ input {
 
 .quote__card {
     background-color: #fff;
-    padding: 3.5rem 2rem 4rem;
+    padding: 2rem 2rem;
     position: relative;
     width: 100%;
     -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, .26);
@@ -626,7 +627,7 @@ input {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     display: inline-block;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 
 .quote__card:hover {
@@ -645,7 +646,7 @@ input {
 
 .quote__image--img {
     width: 100%;
-    margin-top: -1.5rem
+    margin-top: 0;
 }
 
 @media (max-width:640px) {
@@ -733,11 +734,11 @@ input {
     bottom: auto;
     color: #a4a4a4;
     line-height: 1em;
-    font-size: 1.6rem;
-    margin-top: 2rem;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
     display: block;
     text-align: right;
-    margin-bottom: -1rem
+    margin-bottom: -1rem;
 }
 
 .btn {
@@ -1128,7 +1129,7 @@ input {
         bottom: 0;
         width: 100%;
         background-color: #000000fc;
-        background-image: url(../img/bg-pattern.png);
+        background-image: url(../img/bg-pattern.jpg);
         background-repeat: repeat-x;
         background-size: 55%;
         opacity: 1;
