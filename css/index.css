@@ -33,7 +33,7 @@
 }
 
 :root {
-    --default-img: url("img/logo-white.png")
+    --default-img: url("../img/logo-white.png")
 }
 
 a,
@@ -360,9 +360,11 @@ input {
 }
 
 .cont--gradient {
-    background: -webkit-linear-gradient(43deg, rgba(0, 0, 0, .87) 0%, rgba(60, 41, 34, .7) 26%, rgb(74, 50, 42, .8) 82%), url(img/bg-hero-ambient.jpg);
-    background: -o-linear-gradient(43deg, rgba(0, 0, 0, .87) 0%, rgba(60, 41, 34, .7) 26%, rgb(74, 50, 42, .8) 82%), url(img/bg-hero-ambient.jpg);
-    background: linear-gradient(47deg, rgba(0, 0, 0, .87) 0%, rgba(60, 41, 34, .7) 26%, rgb(74, 50, 42, .8) 82%), url(img/bg-hero-ambient.jpg);
+    background: -webkit-linear-gradient(43deg, rgba(0, 0, 0, .87) 0%, rgba(60, 41, 34, .7) 26%, rgb(74, 50, 42, .8) 82%),
+        url(../img/bg-hero-ambient.jpg);
+    background: -o-linear-gradient(43deg, rgba(0, 0, 0, .87) 0%, rgba(60, 41, 34, .7) 26%, rgb(74, 50, 42, .8) 82%),
+        url(../img/bg-hero-ambient.jpg);
+    background: linear-gradient(47deg, rgba(0, 0, 0, .87) 0%, rgba(60, 41, 34, .7) 26%, rgb(74, 50, 42, .8) 82%), url(../img/bg-hero-ambient.jpg);
     position: fixed;
     top: 0;
     left: 0;
@@ -971,7 +973,7 @@ input {
     bottom: 0;
     width: 100%;
     background-color: #000000fc;
-    background-image: url(img/bg-pattern.png);
+    background-image: url(../img/bg-pattern.jpg);
     background-repeat: repeat-x;
     background-size: 11%;
     opacity: 1;
@@ -1121,7 +1123,7 @@ input {
         bottom: 0;
         width: 100%;
         background-color: #000000fc;
-        background-image: url(img/bg-pattern.png);
+        background-image: url(../img/bg-pattern.png);
         background-repeat: repeat-x;
         background-size: 55%;
         opacity: 1;

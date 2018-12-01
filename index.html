@@ -4,18 +4,19 @@
 <head>
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta charset="utf-8">
-  <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  <meta NAME="ROBOTS" CONTENT="INDEX,FOLLOW">
   <meta content="ie=edge" http-equiv="x-ua-compatible">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="yes" name="apple-mobile-web-app-capable">
   <meta content="Matheus Cezar - Impul.site" name="author">
   <meta content="Descricao dos servicos Freitas Barber" name="description">
   <link href="favicon.ico" rel="icon" type="image/x-icon">
-  <title>Barbearia | Freitas Barber</title>
-  <link rel="stylesheet" href="index.css">
-  <link href="https://fonts.googleapis.com/css?family=Rye:400|Zilla+Slab:600|Lato:400" rel="stylesheet" />
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-  <script type="text/javascript" src='assets/js/sheetsee.js'></script>
+  <title>A Melhor Barbearia de Piçarras | Freitas Barber</title>
+    <script src='js/tabletop.js'></script>
+  <script type="text/javascript" src='js/sheetsee.js'></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link href="css/fonts.css" rel="stylesheet">
+
 </head>
 
 <body class="cont fbr fbr_index" ontouchstart="">
@@ -43,9 +44,9 @@
         <p class="content__text"> Pronto para lidar com suas maiores expectativas. Procura excelente qualidade? Preço
           Justo? Então encontrou! </p>
         <div class="content__btns">
-          <a class="btn btn--regular btn--gradient btn--rounded" href="#"><span class="btn--gradient__text"><img src="img/whatsapp.svg"
-                alt="" class="hero-social-icon">Chamar no whatsapp</span></a><a class="btn btn--regular btn--underline btn--text"
-            href="https://www.messenger.com/t/394307227733613"> Ou <img src="img/messenger.svg" alt="" class="hero-social-icon">messenger</a>
+          <a class="btn btn--regular btn--gradient btn--rounded" target="_blank"  href="https://wa.me/5547996783270"><span class="btn--gradient__text"><img src="img/whatsapp.svg"
+                alt="" class="hero-social-icon">Chamar no whatsapp</span></a><a class="btn btn--regular btn--underline btn--text" target="_blank" 
+            href="http://m.me/freitasbarber1977"> Ou <img src="img/messenger.svg" alt="" class="hero-social-icon">messenger</a>
         </div>
         <div class="fb-like" data-href="https://www.facebook.com/freitasbarber1977/" data-layout="button" data-action="like"
           data-size="large" data-show-faces="false" data-share="true"></div>
@@ -236,7 +237,7 @@
     var currentMinute = currentDate.getMinutes();
 
     function openClose() {
-      if (currentHour <= 12 && currentHour >= 13) {
+      if (currentHour != 12) {
         if (currentDay >= 2 && currentDay <= 5) { //if current day is TER-SEX 
           if (currentHour >= 8 && currentHour <= 20) {
             //das 8 as 18 
@@ -252,7 +253,7 @@
             document.getElementById("open").style.display = "none";
           }
         }
-        if (currentDay === 6) {
+        if (currentDay === 6) {// if current day is SAB 
           if (currentHour >= 8 && currentHour <= 18) {
             document.getElementById("closed").style.display = "none";
           } else {
