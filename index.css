@@ -646,7 +646,9 @@ input {
     .quote__card .quote__img {
         -webkit-transform-origin: 0% 0%;
         -ms-transform-origin: 0% 0%;
-        transform-origin: 0% 0%
+        transform-origin: 0% 0%;
+        width: 7rem;
+        height: 7rem;
     }
 
     .quote__card:hover .quote__img {
@@ -663,13 +665,15 @@ input {
     transition: all .1s ease-in-out;
     line-height: 1.4;
     color: #797979;
-    display: block
+    display: block;
+    font-style: italic;
 }
 
 .quote__text__anchor,
 .quote__user {
     color: #997f5f;
-    display: block
+    font-size: 0.9em;
+    display: block;
 }
 
 .quote__user {
@@ -1176,7 +1180,7 @@ input {
     }
 
     .btn--underline {
-        margin-top: 1rem
+        margin-top: 2rem;
     }
 
     .hero-contact-icon {
@@ -1337,4 +1341,5 @@ iframe {
 
 .exibe {
     display: flex;
+    overflow: hidden;
 }
