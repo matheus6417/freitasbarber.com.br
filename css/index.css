@@ -1127,10 +1127,10 @@ input {
         width: 100%;
         background-color: #000000fc;
         background-image: url(../img/bg-pattern.jpg);
-        background-repeat: repeat-x;
-        background-size: 55%;
+        background-repeat: repeat;
+        background-size: contain;
         opacity: 1;
-        filter: brightness(59%)
+        filter: brightness(59%);
     }
 
     .hero-social {
