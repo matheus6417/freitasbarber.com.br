@@ -180,7 +180,7 @@
   </div>
   </div>
   <script id="fullTable_template" type="text/html">
-    {{#rows}} 
+    {{#rows}}
       <a class="quote__card" href="{{LinkQuandoClicaNoCard}}">
           <span class="quote__img" style="background-image: url('{{FotoUsuario}}'),var(--default-img);"></span>
           <div class="iframe {{exibeVideo}}"><iframe src="{{incorporarVideoOuOutraCoisa}}"
@@ -306,39 +306,86 @@
     new AutoDivScroll("quotesScroll", "20", "1", "1");
   </script>
   <script>
-    var currentDate = new Date();
-    var currentMonth = currentDate.getMonth();
-    var currentDay = currentDate.getDay();
-    var currentHour = currentDate.getHours();
-    var currentMinute = currentDate.getMinutes();
+    document.addEventListener('DOMContentLoaded', function () {
+      var currentDate = new Date();
+      var currentMonth = currentDate.getMonth();
+      var currentDay = currentDate.getDay();
+      var currentHour = currentDate.getHours();
+      var currentMinute = currentDate.getMinutes();
 
-    function openClose() {
-      if (currentHour != 12) {
-        if (currentDay >= 2 && currentDay <= 5) {
-          if (currentHour >= 8 && currentHour <= 20) {
-            document.getElementById("closed").style.display = "none";
+      function openClose() {
+        if (currentHour != 12) {
+          if (currentDay != 0) {
+            if (currentDay >= 2 && currentDay <= 5) {
+              if (currentHour >= 8 && currentHour <= 20) {
+                document.getElementById("closed").style.display = "none";
+              } else {
+                document.getElementById("open").style.display = "none";
+              }
+            }
+            if (currentDay === 1) {
+              if (currentHour >= 13 && currentHour <= 20) {
+                document.getElementById("closed").style.display = "none";
+              } else {
+                document.getElementById("open").style.display = "none";
+              }
+            }
+            if (currentDay === 6) {
+              if (currentHour >= 8 && currentHour <= 17) {
+                document.getElementById("closed").style.display = "none";
+              } else {
+                document.getElementById("open").style.display = "none";
+              }
+            }
           } else {
             document.getElementById("open").style.display = "none";
           }
-        }
-        if (currentDay === 1) {
-          if (currentHour >= 13 && currentHour <= 20) {
-            document.getElementById("closed").style.display = "none";
-          } else {
-            document.getElementById("open").style.display = "none";
-          }
-        }
-        if (currentDay === 6) {
-          if (currentHour >= 8 && currentHour <= 17) {
-            document.getElementById("closed").style.display = "none";
-          } else {
-            document.getElementById("open").style.display = "none";
-          }
+        } else {
+          document.getElementById("open").style.display = "none";
         }
       }
-    };
-    setInterval(openClose(), 5000);
+      setInterval(openClose(), 5000);
+    })
   </script>
+  <div class="hero-contacts-wrapper only-mobile">
+    <div class="wrapper left side-paddings">
+      <div class="hero-contacts">
+        <div class="hero-contact">
+          <img src="img/icon-clock.svg" alt="" class="hero-contact-icon">
+          <div>
+            <div class="hero-contact-title">Terça à Sexta: 9h - 20h</div>
+            <div class="hero-contact-subtitle">Segunda: 13h - 20h</div>
+            <div class="hero-contact-subtitle">Sábado: 9h - 18h</div>
+            <!-- <div class="hero-contact-live" id="open">ABERTO AGORA!</div>
+            <div class="hero-contact-live" id="closed">FECHADO AGORA</div> -->
+          </div>
+        </div>
+        <div class="hero-contact"><img src="img/icon-location.svg" alt="" class="hero-contact-icon">
+          <div>
+            <div class="hero-contact-title">Rua Tijucas, 140</div>
+            <div class="hero-contact-subtitle">Bairro NS da Paz, Piçarras SC</div>
+            <div class="hero-contact-subtitle">Próximo a Natubras </div>
+            <a target="_blank" href="https://www.google.com.br/maps/place/Barbearia+FREITAS+BARBER/@-26.7755232,-48.6727507,15z/data=!4m2!3m1!1s0x0:0xea12f3d326cb2c5?ved=2ahUKEwiWp7Kx8szeAhXJgZAKHaPnCVcQ_BIwMXoECAUQCA">
+              <div class="hero-contact-live">VER NO MAPA</div>
+            </a>
+          </div>
+        </div>
+        <div class="hero-contact"><img src="img/icon-contato..svg" alt="" class="hero-contact-icon">
+          <div>
+            <a href="tel:47996783270">
+              <div class="hero-contact-title" title="Ligar para Freitas Barber">(47) 99678-3270</div>
+            </a>
+            <div class="hero-contact-link"><a title="Enviar e-mail para Freitas Barber" href="mailto:marcosfreitas1977@hotmail.com?subject=Contato site"
+                class="link-color">marcosfreitas1977@hotmail.com</a></div>
+            <div class="hero-contact-live"><a title="Ir para a Pagina do Freitas Barber no Facebook" href="https://www.facebook.com/freitasbarber1977/"
+                class="social-link-color"><img src="img/fb-icon.svg" class="hero-social-icon">/freitasbarber1977</a></div>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+    <div class="hero-contacts-bg"></div>
+  </div>
 </body>
 
 </html>
