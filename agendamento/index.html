@@ -215,12 +215,12 @@
       }
 
       #content {
-        position: absolute;
+        /* position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
-        top: 0px;
-        margin-top: -62px;
+        top: 0px; */
+        margin-top: -100px;
       }
 
       .btn--underline:before {
@@ -240,6 +240,12 @@
         border-radius: .6rem;
         margin-left: 11px;
       }
+
+      @media (max-width: 767px) {
+        .btn--underline {
+          margin: 0 !important;
+        }
+      }
     </style>
   </head>
 
@@ -248,12 +254,7 @@
       <a
         class="btn btn--regular btn--underline btn--text"
         href="/"
-      >
-        <img
-          src="img/whatsapp.svg"
-          alt=""
-          class="hero-social-icon"
-        >Voltar para a Pagina Inicial</a>
+      > Voltar para a Pagina Inicial</a>
     </div>
     <div id="content">
       <script src="//simplybook.me/v2/widget/widget.js"></script>
