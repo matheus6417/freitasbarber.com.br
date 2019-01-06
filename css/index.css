@@ -508,6 +508,13 @@ input {
     width: 100%
 }
 
+.fixed-back {
+    position: relative;
+    z-index: 9;
+    background: #333;
+    font-family: -apple-system, " .SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
 @media (max-width:1350px) {
     .content__note__inn {
         padding-left: 6rem
