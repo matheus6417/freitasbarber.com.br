@@ -621,16 +621,19 @@ input {
 
 @media (max-width: 980px) {
   .quote__cont {
-    width: 100%;
-    padding-left: 0;
-    height: auto;
-    transform: none;
+       width: 100%;
+       padding-left: 0;
+       height: 83vh;
+       transform: none;
+       left: 0;
+       float: none;
   }
 }
 
 .social-link-color {
   color: #e7e7e7;
   line-height: 2rem;
+  display: flex
 }
 
 .quote__card {
